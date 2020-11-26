@@ -39,6 +39,6 @@ jobs:
           directory: build.w64
           setup-options: -Db_coverage=true
           options: --verbose --cross-file build-win64.txt --buildtype release
-          meson-version: 0.56.0
+          meson-version: 0.53.0
           ninja-version: 1.10.0.post2
           gcovr-version: 4.2
