@@ -34,11 +34,11 @@ jobs:
 
       - name: Installing Wine
         run: |
-          dpkg --add-architecture i386
+          sudo dpkg --add-architecture i386
           wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
-          add-apt-repository ppa:cybermax-dexter/sdl2-backport
-          apt-add-repository "deb https://dl.winehq.org/wine-builds/ubuntu $(lsb_release -cs) main"
-          apt install --install-recommends winehq-stable
+          sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+          sudo apt-add-repository "deb https://dl.winehq.org/wine-builds/ubuntu $(lsb_release -cs) main"
+          sudo apt install --install-recommends winehq-stable
 
       - name: Meson Build
         # You may pin to the exact commit or the version.
