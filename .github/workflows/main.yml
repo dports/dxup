@@ -23,7 +23,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
       - uses: actions/checkout@v2
+
+      - name: Setup Ninja
+      - uses: seanmiddleditch/gha-setup-ninja@master
+      - run: |
+          mkdir build
+          cd build
+          cmake -G Ninja ..
+      - run: cmake --build build
 
       - name: Meson Build
         # You may pin to the exact commit or the version.
