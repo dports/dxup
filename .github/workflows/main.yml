@@ -49,7 +49,7 @@ jobs:
           action: build
           directory: build.w64
           setup-options: -Db_coverage=true
-          options: --verbose --cross-file ./build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup 
+          options: --verbose --cross-file build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup 
           meson-version: 0.53.0
           ninja-version: 1.10.0.post2
           gcovr-version: 4.2
