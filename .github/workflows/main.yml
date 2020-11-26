@@ -31,4 +31,4 @@ jobs:
         uses: BSFishy/meson-build@v1.0.1
         with:
           # The action to run
-          action: meson --cross-file build-win64.txt --buildtype release --prefix / build.w64
+          action: build
