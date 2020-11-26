@@ -47,9 +47,9 @@ jobs:
         with:
           # The action to run
           action: build
-          directory: build.w64
+          directory: --cross-file build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup build.w64
           setup-options: -Db_coverage=true
-          options: --verbose --cross-file build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup
+          options: --verbose
           meson-version: 0.53.0
           ninja-version: 1.10.0.post2
           gcovr-version: 4.2
