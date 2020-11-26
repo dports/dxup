@@ -38,10 +38,10 @@ jobs:
         uses: BSFishy/meson-build@v1.0.1
         with:
           # The action to run
-          action: build --cross-file build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup
+          action: build
           directory: build.w64
           setup-options: -Db_coverage=true
-          options: --verbose
+          options: --verbose --cross-file build-wine64.txt --buildtype release --prefix /home/runner/work/dxup/dxup
           meson-version: 0.53.0
           ninja-version: 1.10.0.post2
           gcovr-version: 4.2
