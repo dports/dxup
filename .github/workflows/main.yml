@@ -32,3 +32,6 @@ jobs:
         with:
           # The action to run
           action: build
+          directory: build.w64
+          setup-options: -Db_coverage=true
+          options: --verbose --cross-file build-win64.txt --buildtype release
