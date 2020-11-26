@@ -39,7 +39,7 @@ jobs:
           action: build
           directory: build.w64
           setup-options: -Db_coverage=true 
-          options: --verbose --backend vs2019 --buildtype release build
+          options: --verbose
           meson-version: 0.53.0
           ninja-version: 1.10.0.post2
           gcovr-version: 4.2
