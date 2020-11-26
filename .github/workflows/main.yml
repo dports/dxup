@@ -26,7 +26,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Ninja Build
+      - name: Setup Python
+        uses: actions/setup-python@v2
+
+      - name: Setup Ninja
         uses: seanmiddleditch/gha-setup-ninja@master
 
       - name: Meson Build
